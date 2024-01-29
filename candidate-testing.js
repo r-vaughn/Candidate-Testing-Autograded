@@ -22,6 +22,9 @@ function askForName() {
   
 }
 
+
+
+
 function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer // DONE
 
@@ -33,8 +36,8 @@ function askQuestion() {
        console.log(`${candidateAnswers[i]} is correct!`);
     };     
   };
-  console.log(candidateAnswers);
 }
+
 
 
 function gradeQuiz(candidateAnswers) {
@@ -44,11 +47,9 @@ function gradeQuiz(candidateAnswers) {
   for (let i = 0; i < candidateAnswers.length; i++) {
    if (candidateAnswers[i].toUpperCase() === correctAnswers[i].toUpperCase()) {
       numCorrectCandidateAnswers++;
-   }
-  }
-  console.log(numCorrectCandidateAnswers);
-  
-  
+   };
+  };
+
   let grade;  //TODO 3.2 use this variable to calculate the candidates score.
 
   grade = (numCorrectCandidateAnswers) / (correctAnswers.length) * 100; 

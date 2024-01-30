@@ -43,7 +43,7 @@ function askQuestion() {
 function gradeQuiz(candidateAnswers) {
 
   //TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // DONE
-  let numCorrectCandidateAnswers = ''; 
+  let numCorrectCandidateAnswers = 0; 
   for (let i = 0; i < candidateAnswers.length; i++) {
    if (candidateAnswers[i].toUpperCase() === correctAnswers[i].toUpperCase()) {
       numCorrectCandidateAnswers++;
